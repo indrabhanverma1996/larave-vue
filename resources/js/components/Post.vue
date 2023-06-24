@@ -5,8 +5,8 @@
      <table class="table">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Name</th>
+                    
+                    <th>Title</th>
                     <th>description</th>
                     <th>Images</th>
                 </tr>
@@ -16,7 +16,7 @@
                     <td>{{ post.title }}</td>
                     <td>{{ post.description}}</td>
                  
-                    <td style="display: flex; justify-content: space-evenly;"> 
+                    <td style="display: flex; justify-content:space-evenly;"> 
     <img v-for="(item) in post.post_images" :src="'http://127.0.0.1:8000/images/'+item.post_images" width="50px" alt="Post Image" class="preview-image" /></td>
                     
                 </tr>
